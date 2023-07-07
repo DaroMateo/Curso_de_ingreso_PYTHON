@@ -41,11 +41,23 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        OperadorA = self.txt_operador_a.get()
+        OperadorB = self.txt_operador_b.get()
+        
+        OperadorA = int(OperadorA)
+        OperadorB = int(OperadorB)
+        
+        resto = OperadorA % OperadorB 
+        
+        resto = int(str)
+
+        resto_str = str(resto)
+
+        alert("El resto de dividir es" + OperadorA + "y" + OperadorB + "es:" + resto_str)
+    
         
         
     
 if __name__ == "__main__":
     app = App()
-    app.geometry("300x300")
     app.mainloop()
