@@ -56,7 +56,7 @@ class App(customtkinter.CTk):
         self.txt_operador_a.delete(0,100)
         self.txt_operador_a.insert(0,"El resto de dividir es" + OperadorA + "y" + OperadorB + "es:" + resto_str)
 
-        alert("El resto de dividir es" + OperadorA + "y" + OperadorB + "es:" + resto_str)
+        alert("Resultado" , ("El resto de dividir es" + OperadorA + "y" + OperadorB + "es:" + resto_str))
     
         
         
