@@ -44,7 +44,19 @@ class App(customtkinter.CTk):
         incremento = self.txt_sueldo.get()
 
         
-
+         sueldo= int(sueldo) 
+        incremento= int(incremento) 
+  
+        resultado = sueldo + (sueldo * incremento / 100)
+  
+        resultado = int(str) 
+  
+        resultado_str = str(resto) 
+        sueldo_A = str(sueldo) 
+        incremento_B = str(incremento) 
+  
+  
+         alert("Resultado" , "El resto de dividir es" + sueldo_A + "y" + incremento _B + "es:" + resultado_str)
         
     
 if __name__ == "__main__":
