@@ -1,4 +1,4 @@
-import tkinter
+loimport tkinter
 from tkinter.messagebox import showinfo as alert
 from tkinter.messagebox import askyesno as question
 from tkinter.simpledialog import askstring as prompt
@@ -52,11 +52,11 @@ class App(customtkinter.CTk):
         resto = int(str)
 
         resto_str = str(resto)
+        Operador_A = str(OperadorA)
+        Operador_B = str(OperadorB)
         
-        self.txt_operador_a.delete(0,100)
-        self.txt_operador_a.insert(0,"El resto de dividir es" + OperadorA + "y" + OperadorB + "es:" + resto_str)
 
-        alert("Resultado" , ("El resto de dividir es" + OperadorA + "y" + OperadorB + "es:" + resto_str))
+        alert("Resultado" , "El resto de dividir es" + Operador_A + "y" + Operador_B + "es:" + resto_str)
     
         
         
