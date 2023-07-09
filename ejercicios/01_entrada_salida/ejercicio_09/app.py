@@ -53,7 +53,7 @@ class App(customtkinter.CTk):
   
         resultado_str = str(resultado)
         
-        alert("Resultado" , resultado_str)
+        alert("Incremento Porcentual" , resultado_str)
         
     
 if __name__ == "__main__":
