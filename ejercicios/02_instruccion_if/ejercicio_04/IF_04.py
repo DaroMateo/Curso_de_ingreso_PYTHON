@@ -35,7 +35,11 @@ class App(customtkinter.CTk):
         self.btn_mostrar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
 
     def btn_mostrar_on_click(self):
-        pass
+     edad = self.txt_edad.get()
+     edad =int(edad)
+
+     if edad <= 17 and edad >= 13:
+            alert("ALERTA!!", "ADOLECENTE")
 
 
 if __name__ == "__main__":

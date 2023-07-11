@@ -43,19 +43,19 @@ class App(customtkinter.CTk):
         sueldo = self.txt_incremento.get()
         incremento = self.txt_sueldo.get()
 
-        
-         sueldo= int(sueldo) 
+        sueldo= int(sueldo) 
         incremento= int(incremento) 
   
         resultado = sueldo + (sueldo * incremento / 100)
+
+        resultado = int(resultado)
   
-        resultado = int(str) 
-  
-        resultado_str = str(resultado)
+        resultado = str(resultado)
         
-        alert("Incremento Porcentual" , resultado_str)
-        
-    
+        alert("Incremento Porcentual" , resultado)
+
+
+
 if __name__ == "__main__":
     app = App()
     app.mainloop()
