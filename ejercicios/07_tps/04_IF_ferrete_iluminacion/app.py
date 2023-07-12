@@ -5,6 +5,9 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
+nombre: Dario Ezequiel
+apellido: Mateo
+...
 Todas las lámparas están  al mismo precio de $800 pesos final.
 		A.	Si compra 6 o más  lamparitas bajo consumo tiene un descuento del 50%. 
 		B.	Si compra 5  lamparitas bajo consumo marca "ArgentinaLuz" se hace un descuento del 40 % y si es de otra marca el descuento es del 30%.
@@ -43,9 +46,29 @@ class App(customtkinter.CTk):
         cantidad =int(cantidad)
         precio = 800
         
+        mensaje = (precio*cantidad) 
 
         if cantidad >= 6:
-            alert("DESCUENTO" , (precio * cantidad * 0.4))
+            alert("DESCUENTO" , mensaje - mensaje * 0.5)
+        elif cantidad == 5 and lamparitas == "ArgentinaLuz":
+             alert("DESCUENTO" ,mensaje - mensaje * 0.4)
+        elif cantidad == 5 and lamparitas != "ArgentinaLuz":
+             alert("DESCUENTO" , mensaje - mensaje * 0.3)
+        elif cantidad == 4 and lamparitas == "ArgentinaLuz" "FelipeLamparas":
+             alert("DESCUENTO" , mensaje -mensaje* 0,25)
+        elif cantidad == 4 and lamparitas != "JeLuz" "HazIluminacion" "Osram":
+             alert("DESCUENTO" , mensaje - mensaje*0.2)
+        elif cantidad == 3 and lamparitas == "ArgentinaLuz":
+             alert("DESCUENTO" ,mensaje - mensaje * 0.15)
+        elif cantidad == 3 and lamparitas != "FelipeLamparas":
+             alert("DESCUENTO" , mensaje - mensaje* 0.1)
+        elif cantidad == 3 and lamparitas != "JeLuz" "HazIluminacion" "Osram":
+             alert("DESCUENTO" , mensaje - mensaje * 0.05)
+        elif precio >= 4000:
+             alert("DESCUENTO" ,mensaje - mensaje* 0.05)
+        
+
+
 
         
     
