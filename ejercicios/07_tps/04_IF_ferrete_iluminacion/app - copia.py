@@ -43,29 +43,41 @@ class App(customtkinter.CTk):
     def btn_calcular_on_click(self):
         lamparitas = self.combobox_marca.get()
         cantidad = self.combobox_cantidad.get()
-        cantidad =int(cantidad)
+        cantidad = int(cantidad)
         precio = 800
         
-        mensaje = (precio*cantidad) 
+        precio_total = (precio*cantidad)
 
-        if cantidad >= 6:
-            alert("DESCUENTO" , mensaje - mensaje * 0.5)
-        elif cantidad == 5 and lamparitas == "ArgentinaLuz":
-             alert("DESCUENTO" ,mensaje - mensaje * 0.4)
-        elif cantidad == 5 and lamparitas != "ArgentinaLuz":
-             alert("DESCUENTO" , mensaje - mensaje * 0.3)
-        elif cantidad == 4 and lamparitas == "ArgentinaLuz" "FelipeLamparas":
-             alert("DESCUENTO" , mensaje -mensaje* 0,25)
-        elif cantidad == 4 and lamparitas != "JeLuz" "HazIluminacion" "Osram":
-             alert("DESCUENTO" , mensaje - mensaje*0.2)
-        elif cantidad == 3 and lamparitas == "ArgentinaLuz":
-             alert("DESCUENTO" ,mensaje - mensaje * 0.15)
-        elif cantidad == 3 and lamparitas != "FelipeLamparas":
-             alert("DESCUENTO" , mensaje - mensaje* 0.1)
-        elif cantidad == 3 and lamparitas != "JeLuz" "HazIluminacion" "Osram":
-             alert("DESCUENTO" , mensaje - mensaje * 0.05)
-        elif precio >= 4000:
-             alert("DESCUENTO" ,mensaje - mensaje* 0.05)
+        descuento_aplicado = precio_total * porcentaje
+        descuento_por_aplicarse = precio_total - int(descuento_aplicado)
+
+        match lamparitas:
+           case "ArgentinaLuz":
+                match cantidad:
+                    case  6 | 7 | 8 | 9 |10 | 11 | 12:
+                        porcentaje = 0.50
+           case "ArgentinaLuz":
+                match cantidad:
+                    case 5:
+                        porcentaje = 0.40
+                    case _:
+                        porcentaje = 0.30
+           case "ArgentinaLuz" | "FelipeLamparas":
+                match cantidad:
+                    case 4:
+                        porcentaje = 0.25
+                    case _:
+                        porcentaje = 0.20
+           case "ArgentinaLuz":
+                match cantidad:
+                    case 3:
+                        porcentaje = 0.15
+           case "FelipeLamparas":
+                match cantidad:
+                    case 3:
+                        porcentaje = 0.10
+                    case _:
+                        porcentaje = 0.05
         
 
 
