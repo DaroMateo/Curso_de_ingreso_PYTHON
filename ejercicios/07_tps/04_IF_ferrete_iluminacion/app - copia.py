@@ -47,9 +47,11 @@ class App(customtkinter.CTk):
         precio = 800
         
         precio_total = (precio*cantidad)
+        porcentaje = 0
 
         descuento_aplicado = precio_total * porcentaje
         descuento_por_aplicarse = precio_total - int(descuento_aplicado)
+        
 
         match lamparitas:
            case "ArgentinaLuz":
