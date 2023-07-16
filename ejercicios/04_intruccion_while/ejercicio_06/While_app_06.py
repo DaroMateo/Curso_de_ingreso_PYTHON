@@ -38,17 +38,16 @@ class App(customtkinter.CTk):
         acumulador = 0
 
         while acumulador < 5:
-            suma = int(suma)
-            suma += prompt("SUMA" , "Numero")
+            suma += int(prompt("SUMA" , "Numero"))
             acumulador += 1
         
-        promedio = suma / acumulador
+            promedio = suma / acumulador
 
-        suma= str(suma)
-        promedio = str(promedio)
+            suma= str(suma)
+            promedio = str(promedio)
 
-        self.txt_suma_acumulada.insert(0, str(suma))
-        self.txt_promedio.insert(0 , str(promedio))
+            self.txt_suma_acumulada.insert(0, str(suma))
+            self.txt_promedio.insert(0 , str(promedio))
 
 
     
