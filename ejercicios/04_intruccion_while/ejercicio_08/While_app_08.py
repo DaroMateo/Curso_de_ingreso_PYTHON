@@ -32,7 +32,26 @@ class App(customtkinter.CTk):
 
 
     def btn_comenzar_ingreso_on_click(self):
-        pass
+        suma = 0
+        multiplicacion = 0
+
+        while True:
+            numero = prompt("SUMA", "NUMERO, NO VACIO")
+            if numero is None or numero == "" or numero == "0":
+                respuesta = question("CANCELACION", "¿Usted desea cancelar?")
+                if respuesta:
+                    break
+            else:
+                numero = int(numero)
+                if numero < 0:
+                    multiplicacion *= int(numero)
+                else:
+                    suma += int(numero)
+
+        self.txt_suma_acumulada.delete(0,100)
+        self.txt_suma_acumulada.insert(0, str(suma))
+        self.txt_producto.delete(0,100)
+        self.txt_producto.insert(0, int(multiplicacion))
 
     
 if __name__ == "__main__":
