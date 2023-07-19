@@ -38,6 +38,7 @@ class App(customtkinter.CTk):
         acumulador = 0
         numero = int(prompt("SUMA" , "Numero"))
 
+
         while contador < 5:
             
             numero = int(prompt("SUMA" , "Numero"))
