@@ -36,25 +36,27 @@ class App(customtkinter.CTk):
 
     def btn_comenzar_ingreso_on_click(self):
         acumulador = 0
-        numero = 1
-        respuesta = question("ALERT" , "desea continuar?")
+        contador = 0
+        cancelar = False
 
+        numero = prompt("SUMA", "NUMERO no vacio")
+        while not cancelar:
+            if numero is None or numero == "":
+                cancelar = question("Confirmación", "¿Desea cancelar?")
+                if cancelar:
+                    continue
+            else:
+                acumulador += int(numero)
+                contador += 1
 
-        while numero !=0 and respuesta:
-            numero = prompt("TITULO" , "ACUMULAODR")
-            acumulador += numero
-            numero =int(numero)
-            respuesta = question("ALERT" , "desea continuar?")
+            numero = prompt("SUMA", "NUMERO no vacio")
 
-            promedio = numero/ acumulador
-
-            #numero= str(numero)
-            #promedio = str(promedio)
-
-            self.txt_suma_acumulada.delete(0 , 100)
-            self.txt_suma_acumulada.insert(0, str(numero))
-            self.txt_promedio.delete (0 , 100)
-            self.txt_promedio.insert(0 , str(promedio))
+        promedio = acumulador/contador
+        self.txt_suma_acumulada.delete(0, 100)
+        self.txt_suma_acumulada.insert(0, str(acumulador))
+        self.txt_promedio.delete(0, 100)
+        self.txt_promedio.insert(0, str(promedio))
+    
 
     
 if __name__ == "__main__":

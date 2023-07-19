@@ -23,7 +23,8 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass 
+        pfor i in range(1,6,1):
+            alert("ASENDENTE", i) 
        
             
 
