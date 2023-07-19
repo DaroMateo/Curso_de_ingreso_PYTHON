@@ -23,7 +23,7 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        for i in range(-5,-1,1):
+        for i in range(5,1,-1):
             alert("DESNDENTE" , i)  
        
             
