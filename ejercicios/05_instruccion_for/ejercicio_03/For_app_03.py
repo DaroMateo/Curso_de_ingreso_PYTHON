@@ -29,8 +29,9 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        for i in range(0,"Hola UTN FRA",1):
-            alert("","Hola UTN FRA")
+        mensaje = "Hola UTN FRA"
+        for i in range(0,len(mensaje):
+            alert("", mensaje)
 
         
         
