@@ -29,7 +29,7 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        for i in range(0,5,1):
+        for i in range(0,"Hola UTN FRA",1):
             alert("","Hola UTN FRA")
 
         
