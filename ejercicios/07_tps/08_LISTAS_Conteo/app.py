@@ -44,10 +44,67 @@ class App(customtkinter.CTk):
         self.lista = []
 
     def btn_comenzar_ingreso_on_click(self):
-        pass
+        numero = prompt("", "NUMERO")
+        continuar = True
+
+        while continuar:
+            if(numero == None):
+                continuar = not question("", "DEJAR DE INGRESAR?")
+                if not continuar:
+                    break
+            elif(numero == ""):
+                numero = prompt("", "NUMERO VALIDO")
+                continue
+            else:
+                self.lista.append(int(numero))
+
+            numero = prompt("", "NUMERO")
 
     def btn_mostrar_estadisticas_on_click(self):
-        pass
+        suma_positivos= 0 
+        cantidad_positivos = 0 
+        maximo_positivos = None
+        suma_negativos = 0 
+        cantidad_negativos = 0 
+        minimo_negativos = None
+        ceros = 0
+
+        print(self.lista)
+
+        for i in self.lista:
+            if i > 0:
+                if maximo_positivos == None:
+                    maximo_positivos = i
+                elif maximo_positivos < i:
+                    maximo_positivos = i
+                
+                suma_positivos += i
+                cantidad_positivos += 1
+            elif i < 0:
+                if minimo_negativos == None:
+                    minimo_negativos = i
+                elif minimo_negativos > i:
+                    minimo_negativos = i
+                
+                suma_negativos += i
+                cantidad_negativos += 1
+            else:
+                ceros += 1
+
+        promedio_negativos = 0
+        if cantidad_negativos != 0:
+            promedio_negativos = suma_negativos//cantidad_negativos
+
+        mensaje = ("Estadísticas:\n\tSuma de los positivos: " + str(suma_positivos) + \
+                   "\n\tSuma de los negativos: " + str(suma_negativos) + \
+                   "\n\tCantidad de positivos: " + str(cantidad_positivos) + \
+                   "\n\tCantidad de negativos: " + str(cantidad_negativos) + \
+                   "\n\tMinimo de negativos: " + str(minimo_negativos) + \
+                   "\n\tMáximo de positivos: " + str(maximo_positivos) + \
+                   "\n\tCeros: " + str(ceros) + \
+                   "\n\tPromedio de negativos: " + str(promedio_negativos))
+
+        alert("Esto es una alerta", mensaje)
 
 
 if __name__ == "__main__":
