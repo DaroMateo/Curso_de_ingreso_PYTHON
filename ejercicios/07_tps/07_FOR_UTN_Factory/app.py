@@ -62,11 +62,11 @@ class App(customtkinter.CTk):
         cantidad_asp = 0
 
         for i in range(0, 10, 1):
-            nombre = prompt("Nombre", "Por favor ingrese su nombre")
-            edad = int(prompt("Edad", "Por favor ingrese su edad"))
-            genero = prompt("Genero", "Por favor ingrese su genero")
-            tecnologia = prompt("Tecnologia", "Por favor ingrese su tecnologia")
-            senior = prompt("Seniority", "Por favor ingrese su seniority")
+            nombre = prompt("", "NOMBRE")
+            edad = int(prompt("", "EDAD"))
+            genero = prompt("", "GENERO")
+            tecnologia = prompt("", "TECNOLOGIA")
+            senior = prompt("", "PUESTO")
 
             # Generales
             postulantes += 1
