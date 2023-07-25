@@ -61,6 +61,13 @@ class App(customtkinter.CTk):
         cantidad_js = 0 
         cantidad_asp = 0
 
+        promedio_nbs = 0
+        porcentaje_nbs = 0
+        promedio_fs = 0
+        porcentaje_fs = 0
+        promedio_ms = 0
+        porcentaje_ms = 0
+
         for i in range(0, 10, 1):
             nombre = prompt("", "NOMBRE")
             edad = int(prompt("", "EDAD"))
@@ -68,16 +75,16 @@ class App(customtkinter.CTk):
             tecnologia = prompt("", "TECNOLOGIA")
             senior = prompt("", "PUESTO")
 
-            # Generales
+            # GENERAL
             postulantes += 1
 
             if genero == "NB":
                 cantidad_nbs += 1
                 edades_nbs += edad
-            elif genero == "F":
+            elif genero == "Femenino":
                 cantidad_fs += 1
                 edades_fs += edad
-            elif genero == "M":
+            elif genero == "Masculino":
                 cantidad_ms += 1
                 edades_ms += edad
 
@@ -88,7 +95,7 @@ class App(customtkinter.CTk):
             elif tecnologia == "ASP.NET":
                 cantidad_asp += 1
 
-            # Específicos
+            # ESPECIFICO
             if genero == "NB" and (tecnologia == "ASP.NET" or tecnologia == "JS") and edad > 24 and edad < 41 and senior == "Ssr":
                 nbs += 1
 
@@ -100,21 +107,12 @@ class App(customtkinter.CTk):
                     nombre_jr_menor = nombre
                     edad_jr_menor = edad
 
-        promedio_nbs = 0
-        porcentaje_nbs = 0
-        if cantidad_nbs != 0:
+        
+        if cantidad_nbs or cantidad_fs or cantidad_ms != 0:
             promedio_nbs = edades_nbs/cantidad_nbs
             porcentaje_nbs = cantidad_nbs/postulantes*100
-
-        promedio_fs = 0
-        porcentaje_fs = 0
-        if cantidad_fs != 0:
             promedio_fs = edades_fs/cantidad_fs
             porcentaje_fs = cantidad_fs/postulantes*100
-
-        promedio_ms = 0
-        porcentaje_ms = 0
-        if cantidad_ms != 0:
             promedio_ms = edades_ms/cantidad_ms
             porcentaje_ms = cantidad_ms/postulantes*100
 
@@ -125,11 +123,15 @@ class App(customtkinter.CTk):
             else:
                 tecnologia_mas_postulada = "JS"
 
-        print("Cantidad de postulantes de genero no binario (NB) que programan en ASP.NET o JS " + "cuya edad este entre 25 y 40, que se hayan postulado para un puesto Ssr: " + str(nbs))
+        print("Cantidad de postulantes de genero no binario (NB) que programan en ASP.NET o JS " + str(nbs))
         print("Nombre del postulante Jr con menor edad: " + nombre_jr_menor)
-        print("Promedio de edades por género:\n\tNBs: " + str(promedio_nbs) + "\n\tFs: " + str(promedio_fs) + "\n\tMs: " + str(promedio_ms))
+        print("Promedio de edades por género NBS: " + str(promedio_nbs))
+        print("Promedio de edades por género FS: " + str(promedio_fs))
+        print("Promedio de edades por género MS: "  + str(promedio_ms))
         print("Tecnología con más postulantes: " + tecnologia_mas_postulada)
-        print("Porcentaje de postulantes de cada género:\n\tNBs: " + str(porcentaje_nbs) + "\n\tFs: " + str(porcentaje_fs) + "\n\tMs: " + str(porcentaje_ms))
+        print("Porcentaje de postulantes de cada género NBS: " + str(porcentaje_nbs))
+        print("Porcentaje de postulantes de cada género FS: " + str(porcentaje_fs))
+        print("Porcentaje de postulantes de cada género MS: " + str(porcentaje_ms))
 
 
 
