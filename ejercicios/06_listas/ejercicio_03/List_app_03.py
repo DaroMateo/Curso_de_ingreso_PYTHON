@@ -24,7 +24,7 @@ class App(customtkinter.CTk):
 
 
     def btn_calcular_on_click(self):
-        maximo = self.lista_datos(0)
+        maximo = self.lista_datos[0]
         for contador in (self.lista_datos):
             if contador > maximo:
                 maximo = contador
