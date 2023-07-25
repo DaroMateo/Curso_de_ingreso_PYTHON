@@ -125,14 +125,12 @@ class App(customtkinter.CTk):
             else:
                 tecnologia_mas_postulada = "JS"
 
-        print("Cantidad de postulantes de genero no binario (NB) que programan en ASP.NET o JS "\
-              "cuya edad este entre 25 y 40, que se hayan postulado para un puesto Ssr: " + str(nbs))
+        print("Cantidad de postulantes de genero no binario (NB) que programan en ASP.NET o JS " + "cuya edad este entre 25 y 40, que se hayan postulado para un puesto Ssr: " + str(nbs))
         print("Nombre del postulante Jr con menor edad: " + nombre_jr_menor)
-        print("Promedio de edades por género:\n\tNBs: " + str(promedio_nbs) + "\n\tFs: " + str(promedio_fs) + \
-              "\n\tMs: " + str(promedio_ms))
+        print("Promedio de edades por género:\n\tNBs: " + str(promedio_nbs) + "\n\tFs: " + str(promedio_fs) + "\n\tMs: " + str(promedio_ms))
         print("Tecnología con más postulantes: " + tecnologia_mas_postulada)
-        print("Porcentaje de postulantes de cada género:\n\tNBs: " + str(porcentaje_nbs) + \
-              "\n\tFs: " + str(porcentaje_fs) + "\n\tMs: " + str(porcentaje_ms))
+        print("Porcentaje de postulantes de cada género:\n\tNBs: " + str(porcentaje_nbs) + "\n\tFs: " + str(porcentaje_fs) + "\n\tMs: " + str(porcentaje_ms))
+
 
 
 if __name__ == "__main__":
