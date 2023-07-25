@@ -50,27 +50,51 @@ class App(customtkinter.CTk):
         self.btn_validar.grid(row=4, pady=20, columnspan=2, sticky="nsew")
 
     def btn_validar_on_click(self):
-       Apellido= prompt("", "APELLIDO")
-        
-        while Apellido == None or not Apellido.isalpha() or len(Apellido)<3:
-            Apellido= prompt("", "APELLIDO")
+       apellido = None 
+        edad= None 
+        estado_civil = None 
+        legajo = None
 
-        edad:prompt("","edad")
-        while edad == None or not edad.isdigit() or int(edad) < 18 or int(edad) > 90:
-            edad:prompt("","edad")
-        
-        estado_civil= prompt("", "ESTADO CIVIL")
-        while not estado_civil == self.combobox_tipo.set("Soltero/a", "Casado/a", "Divorciado/a", "Viudo/a"):
-            estado_civil= prompt("", "ESTADO CIVIL")
+        apellido = prompt("", "APELLIDO")
+        while apellido is None or apellido == "" or apellido.isdigit():
+            if apellido is None:
+                if question("", "DESEA CONTINUAR?"):
+                    quit()
 
-        legajo= prompt("", "N° de Legajo")
-        while not legajo  == None or not legajo.isdigit() or int(legajo) < 1000 or int(legajo) >9999:
-              estado_civil= prompt("", "ESTADO CIVIL")
-        self.txt_apellido.insert(0,Apellido)
-        self.txt_edad.insert(0,str(edad))
-        self.combobox_tipo.set(0, str(estado_civil))
-        self.txt_legajo.insert(0,str(legajo))
+            apellido = prompt("", "APELLIDO")
 
+        edad = prompt("", "EDAD")
+        while edad is None or edad == "" or not edad.isdigit():
+            if edad is None:
+                if question("", "DESEA CONTINUAR?"):
+                    quit()
+
+            edad = prompt("", "EDAD")
+
+        estado_civil = prompt("", "ESTADO CIVIL")
+        while estado_civil is None or (estado_civil != "Soltero/a" and estado_civil != "Casado/a"\
+                                       and estado_civil != "Divorciado/a" and estado_civil != "Viudo/a"):
+            if estado_civil is None:
+                if question("", "DESEA CONTINUAR?"):
+                    quit()
+
+            estado_civil = prompt("", "ESTADO CIVIL")
+
+        legajo = prompt("", "LEGAJO")
+        while legajo is None or legajo == "" or not legajo.isdigit() or int(legajo) < 1000 or int(legajo) > 9999:
+            if legajo is None:
+                if question("", "DESEA CONTINUAR?"):
+                    quit()
+
+            legajo = prompt("", "LEGAJO")
+
+        self.txt_apellido.delete(0, 200)
+        self.txt_apellido.insert(0, apellido)
+        self.txt_edad.delete(0, 200)
+        self.txt_edad.insert(0, edad)
+        self.combobox_tipo.set(estado_civil)
+        self.txt_legajo.delete(0, 200)
+        self.txt_legajo.insert(0, legajo)
 
 if __name__ == "__main__":
     app = App()
