@@ -59,7 +59,7 @@ class App(customtkinter.CTk):
         while apellido is None or apellido == "" or apellido.isdigit():
             if apellido is None:
                 if question("", "DESEA CONTINUAR?"):
-                    quit()
+                    break
 
             apellido = prompt("", "APELLIDO")
 
@@ -67,16 +67,15 @@ class App(customtkinter.CTk):
         while edad is None or edad == "" or not edad.isdigit():
             if edad is None:
                 if question("", "DESEA CONTINUAR?"):
-                    quit()
+                    break
 
             edad = prompt("", "EDAD")
 
         estado_civil = prompt("", "ESTADO CIVIL")
-        while estado_civil is None or (estado_civil != "Soltero/a" and estado_civil != "Casado/a"\
-                                       and estado_civil != "Divorciado/a" and estado_civil != "Viudo/a"):
+        while estado_civil is None or (estado_civil != "Soltero/a" and estado_civil != "Casado/a" and estado_civil != "Divorciado/a" and estado_civil != "Viudo/a"):
             if estado_civil is None:
                 if question("", "DESEA CONTINUAR?"):
-                    quit()
+                    break
 
             estado_civil = prompt("", "ESTADO CIVIL")
 
@@ -84,7 +83,7 @@ class App(customtkinter.CTk):
         while legajo is None or legajo == "" or not legajo.isdigit() or int(legajo) < 1000 or int(legajo) > 9999:
             if legajo is None:
                 if question("", "DESEA CONTINUAR?"):
-                    quit()
+                    break
 
             legajo = prompt("", "LEGAJO")
 
