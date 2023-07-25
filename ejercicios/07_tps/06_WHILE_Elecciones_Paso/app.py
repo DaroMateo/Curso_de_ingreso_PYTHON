@@ -95,7 +95,7 @@ class App(customtkinter.CTk):
                   "Promedio de edades de los candidatos: " + str(promedio_edad) + "\n"\
                   "Total de votos emitidos: " + str(total_votos)
 
-        alert("Esto es una alerta", mensaje)
+        print("Esto es una alerta", mensaje)
 
 
 
