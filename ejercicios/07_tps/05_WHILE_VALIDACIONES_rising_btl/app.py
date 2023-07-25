@@ -50,26 +50,26 @@ class App(customtkinter.CTk):
         self.btn_validar.grid(row=4, pady=20, columnspan=2, sticky="nsew")
 
     def btn_validar_on_click(self):
-        Apellido = 0
-        edad = 0
-        estado_civil = 0
-        numero_legajo = 0
+       Apellido= prompt("", "APELLIDO")
         
-        Apellido= prompt("", "APELLIDO")
-
-        while Apellido:
+        while Apellido == None or not Apellido.isalpha() or len(Apellido)<3:
             Apellido= prompt("", "APELLIDO")
-         
 
+        edad:prompt("","edad")
+        while edad == None or not edad.isdigit() or int(edad) < 18 or int(edad) > 90:
+            edad:prompt("","edad")
+        
+        estado_civil= prompt("", "ESTADO CIVIL")
+        while not estado_civil == self.combobox_tipo.set("Soltero/a", "Casado/a", "Divorciado/a", "Viudo/a"):
+            estado_civil= prompt("", "ESTADO CIVIL")
 
-        self.txt_edad.delete(0,100)
-        self.combobox_tipo.delete(0,100)
-        self.txt_apellido.delete(0,100)
-        self.txt_legajo.delete(0,100)
-        self.txt_apellido.insert(0,str(Apellido))
-        self.txt_edad.insertt(0,str(edad))
-        self.combobox_tipo(0, str(estado_civil))
-        self.txt_legajo.insert(0,str(numero_legajo))
+        legajo= prompt("", "N° de Legajo")
+        while not legajo  == None or not legajo.isdigit() or int(legajo) < 1000 or int(legajo) >9999:
+              estado_civil= prompt("", "ESTADO CIVIL")
+        self.txt_apellido.insert(0,Apellido)
+        self.txt_edad.insert(0,str(edad))
+        self.combobox_tipo.set(0, str(estado_civil))
+        self.txt_legajo.insert(0,str(legajo))
 
 
 if __name__ == "__main__":
