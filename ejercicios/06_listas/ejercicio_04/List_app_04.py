@@ -24,7 +24,11 @@ class App(customtkinter.CTk):
 
 
     def btn_calcular_on_click(self):
-        pass
+        minimo = self.lista_datos(80)
+        for contador in (self.lista_datos):
+            if contador < minimo:
+                minimo = contador
+        alert("", minimo)
     
     
 if __name__ == "__main__":
