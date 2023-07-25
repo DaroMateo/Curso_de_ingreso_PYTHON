@@ -95,14 +95,8 @@ class App(customtkinter.CTk):
         if cantidad_negativos != 0:
             promedio_negativos = suma_negativos//cantidad_negativos
 
-        mensaje = ("Estadísticas:\n\tSuma de los positivos: " + str(suma_positivos) + \
-                   "\n\tSuma de los negativos: " + str(suma_negativos) + \
-                   "\n\tCantidad de positivos: " + str(cantidad_positivos) + \
-                   "\n\tCantidad de negativos: " + str(cantidad_negativos) + \
-                   "\n\tMinimo de negativos: " + str(minimo_negativos) + \
-                   "\n\tMáximo de positivos: " + str(maximo_positivos) + \
-                   "\n\tCeros: " + str(ceros) + \
-                   "\n\tPromedio de negativos: " + str(promedio_negativos))
+         mensaje = ("Estadísticas:\n\tSuma de los positivos: " + str(suma_positivos) +  "\n\tSuma de los negativos: " + str(suma_negativos) + "\n\tCantidad de positivos: " + str(cantidad_positivos) + "\n\tCantidad de negativos: " + str(cantidad_negativos) +  "\n\tMinimo de negativos: " + str(minimo_negativos) + "\n\tMáximo de positivos: " + str(maximo_positivos) +"\n\tCeros: " + str(ceros) + "\n\tPromedio de negativos: " + str(promedio_negativos))
+
 
         alert("Esto es una alerta", mensaje)
 
