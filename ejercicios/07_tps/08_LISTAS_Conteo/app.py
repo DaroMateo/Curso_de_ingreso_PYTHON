@@ -61,50 +61,51 @@ class App(customtkinter.CTk):
             numero = prompt("", "NUMERO")
 
     def btn_mostrar_estadisticas_on_click(self):
-        suma_positivos= 0 
-        cantidad_positivos = 0 
-        maximo_positivos = None
-        suma_negativos = 0 
-        cantidad_negativos = 0 
-        minimo_negativos = None
+        suma_positivo= 0 
+        cantidad_positivo = 0 
+        maximo_positivo = None
+        suma_negativo = 0 
+        cantidad_negativo = 0 
+        minimo_negativo = None
         ceros = 0
 
         print(self.lista)
 
         for i in self.lista:
             if i > 0:
-                if maximo_positivos == None:
-                    maximo_positivos = i
-                elif maximo_positivos < i:
-                    maximo_positivos = i
+                if maximo_positivo == None:
+                    maximo_positivo = i
+                elif maximo_positivo < i:
+                    maximo_positivo = i
                 
-                suma_positivos += i
-                cantidad_positivos += 1
+                suma_positivo += i
+                cantidad_positivo += 1
             elif i < 0:
-                if minimo_negativos == None:
-                    minimo_negativos = i
-                elif minimo_negativos > i:
-                    minimo_negativos = i
+                if minimo_negativo == None:
+                    minimo_negativo = i
+                elif minimo_negativo > i:
+                    minimo_negativo = i
                 
-                suma_negativos += i
-                cantidad_negativos += 1
+                suma_negativo += i
+                cantidad_negativo += 1
             else:
                 ceros += 1
 
-        promedio_negativos = 0
-        if cantidad_negativos != 0:
-            promedio_negativos = suma_negativos//cantidad_negativos
+        promedio_negativo = 0
+        if cantidad_negativo != 0:
+            promedio_negativo = suma_negativo//cantidad_negativo
 
-        mensaje = ("Suma de los positivos: " + str(suma_positivos))
-        mensaje = ("Suma de los negativos: " + str(suma_negativos))
-        mensaje =("Cantidad de positivos: " + str(cantidad_positivos))
-        mensaje = ("Cantidad de negativos: " + str(cantidad_negativos))
-        mensaje = ("Minimo de negativos: " + str(minimo_negativos))
-        mensaje = ("Maximo de positivos: "+ str(maximo_positivos))
+        mensaje = ("Suma de los positivos: " + str(suma_positivo))
+        mensaje = ("Suma de los negativos: " + str(suma_negativo))
+        mensaje =("Cantidad de positivos: " + str(cantidad_positivo))
+        mensaje = ("Cantidad de negativos: " + str(cantidad_negativo))
+        mensaje = ("Minimo de negativos: " + str(minimo_negativo))
+        mensaje = ("Maximo de positivos: "+ str(maximo_positivo))
         mensaje = ("Cero: " +str(ceros))
-        mensaje = ("Promedio de negativos: " + str(promedio_negativos))
+        mensaje = ("Promedio de negativos: " + str(promedio_negativo))
 
-        alert("Esto es una alerta", mensaje)
+
+        alert("Estadisticas", mensaje)
 
 
 if __name__ == "__main__":
