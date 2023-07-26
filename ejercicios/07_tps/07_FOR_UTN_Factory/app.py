@@ -70,12 +70,11 @@ class App(customtkinter.CTk):
 
         for i in range(0, 10, 1):
             nombre = prompt("", "NOMBRE")
-            edad = int(prompt("", "EDAD"))
+            edad = prompt("", "EDAD")
             genero = prompt("", "GENERO")
             tecnologia = prompt("", "TECNOLOGIA")
             senior = prompt("", "PUESTO")
 
-            # GENERAL
             postulantes += 1
 
             if genero == "NB":
@@ -95,7 +94,7 @@ class App(customtkinter.CTk):
             elif tecnologia == "ASP.NET":
                 cantidad_asp += 1
 
-            # ESPECIFICO
+            
             if genero == "NB" and (tecnologia == "ASP.NET" or tecnologia == "JS") and edad > 24 and edad < 41 and senior == "Ssr":
                 nbs += 1
 
@@ -123,7 +122,7 @@ class App(customtkinter.CTk):
             else:
                 tecnologia_mas_postulada = "JS"
 
-        print("Cantidad de postulantes de genero no binario (NB) que programan en ASP.NET o JS " + str(nbs))
+        print("Cantidad de postulantes de genero NB que programan en ASP.NET o JS " + str(nbs))
         print("Nombre del postulante Jr con menor edad: " + nombre_jr_menor)
         print("Promedio de edades por género NBS: " + str(promedio_nbs))
         print("Promedio de edades por género FS: " + str(promedio_fs))
