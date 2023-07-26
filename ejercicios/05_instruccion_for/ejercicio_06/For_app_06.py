@@ -22,7 +22,8 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        for i in range(1,12,2):
+            alert("PARES", i)
         
     
 if __name__ == "__main__":

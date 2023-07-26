@@ -22,7 +22,10 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        for _ in range(int,1):
+            _ = prompt("","numero")
+            alert("", _)
+        
         
     
 if __name__ == "__main__":

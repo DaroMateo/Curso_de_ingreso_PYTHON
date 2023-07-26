@@ -5,6 +5,9 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
+nombre: Dario Ezequiel
+apellido: Mateo
+...
 Rising BTL. Empresa dedicada a la toma de datos para realizar estadísticas y censos nos pide realizar una carga de datos validada e ingresada 
 por ventanas emergentes solamente (para evitar hacking y cargas maliciosas) y luego asignarla a cuadros de textos. 
 
@@ -50,27 +53,50 @@ class App(customtkinter.CTk):
         self.btn_validar.grid(row=4, pady=20, columnspan=2, sticky="nsew")
 
     def btn_validar_on_click(self):
-        Apellido = 0
-        edad = 0
-        estado_civil = 0
-        numero_legajo = 0
-        
-        Apellido= prompt("", "APELLIDO")
+       apellido = None 
+        edad= None 
+        estado_civil = None 
+        legajo = None
 
-        while Apellido:
-            Apellido= prompt("", "APELLIDO")
-         
+        apellido = prompt("", "APELLIDO")
+        while apellido is None or apellido == "" or apellido.isdigit():
+            if apellido is None:
+                if question("", "DESEA CONTINUAR?"):
+                    break
 
+            apellido = prompt("", "APELLIDO")
 
-        self.txt_edad.delete(0,100)
-        self.combobox_tipo.delete(0,100)
-        self.txt_apellido.delete(0,100)
-        self.txt_legajo.delete(0,100)
-        self.txt_apellido.insert(0,str(Apellido))
-        self.txt_edad.insertt(0,str(edad))
-        self.combobox_tipo(0, str(estado_civil))
-        self.txt_legajo.insert(0,str(numero_legajo))
+        edad = prompt("", "EDAD")
+        while edad is None or edad == "" or not edad.isdigit():
+            if edad is None:
+                if question("", "DESEA CONTINUAR?"):
+                    break
 
+            edad = prompt("", "EDAD")
+
+        estado_civil = prompt("", "ESTADO CIVIL")
+        while estado_civil is None or (estado_civil != "Soltero/a" and estado_civil != "Casado/a" and estado_civil != "Divorciado/a" and estado_civil != "Viudo/a"):
+            if estado_civil is None:
+                if question("", "DESEA CONTINUAR?"):
+                    break
+
+            estado_civil = prompt("", "ESTADO CIVIL")
+
+        legajo = prompt("", "LEGAJO")
+        while legajo is None or legajo == "" or not legajo.isdigit() or int(legajo) < 1000 or int(legajo) > 9999:
+            if legajo is None:
+                if question("", "DESEA CONTINUAR?"):
+                    break
+
+            legajo = prompt("", "LEGAJO")
+
+        self.txt_apellido.delete(0, 200)
+        self.txt_apellido.insert(0, apellido)
+        self.txt_edad.delete(0, 200)
+        self.txt_edad.insert(0, edad)
+        self.combobox_tipo.set(estado_civil)
+        self.txt_legajo.delete(0, 200)
+        self.txt_legajo.insert(0, legajo)
 
 if __name__ == "__main__":
     app = App()
