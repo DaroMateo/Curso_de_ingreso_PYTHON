@@ -106,14 +106,13 @@ class App(customtkinter.CTk):
 
 
     def btn_informar_on_click(self):
-       kilometraje_promedio =0
+       kilometraje_promedio = True
        kilometraje_mayor_promedio=0
        kilometraje_menor_promedio=0
-       servicio=0
        acumulador=0
        contador=0
-       while servicio == 0:
-           acumulador += servicio
+       while kilometraje_promedio is True:
+           acumulador += kilometraje_promedio
            contador += 1
             
        promedio = acumulador / contador
