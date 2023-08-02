@@ -21,7 +21,7 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-         numero = int(prompt("", "NUMERO"))
+        numero = int(prompt("", "NUMERO"))
         es_primo = True
 
         for i in range(2, numero // 2 + 1, 1):
