@@ -53,7 +53,7 @@ class App(customtkinter.CTk):
         self.btn_validar.grid(row=4, pady=20, columnspan=2, sticky="nsew")
 
     def btn_validar_on_click(self):
-       apellido = None 
+        apellido = None 
         edad= None 
         estado_civil = None 
         legajo = None
