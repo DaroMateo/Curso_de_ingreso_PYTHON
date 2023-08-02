@@ -121,7 +121,8 @@ class App(customtkinter.CTk):
        for kilometros_vehiculo in self.lista_marca_vehiculo:
             if kilometros_vehiculo > kilometraje_promedio:
                 kilometraje_mayor_promedio.append(kilometros_vehiculo)
-            else:
+       for kilometros_vehiculo in self.lista_tipo_vehiculo:
+            if kilometros_vehiculo < kilometraje_promedio:
                 kilometraje_menor_promedio.append(kilometros_vehiculo)
             print("Kilometrajes que superan al promedio: " + str(kilometraje_mayor_promedio) + "\n")
             print("Kilometrajes que NO superan al promedio: " + str(kilometraje_menor_promedio) + "\n")
