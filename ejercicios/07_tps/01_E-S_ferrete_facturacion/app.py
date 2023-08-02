@@ -94,7 +94,7 @@ class App(customtkinter.CTk):
             print("Listas de pesos:\n")
 
             for peso in self.lista_pesos:
-                pesos_onzas= peso *0.035274
+                pesos_onzas= float(peso) *0.035274
                 mensaje = "Gramos: " + str(peso) + "Onzas: )" +str(pesos_onzas)
                 print(mensaje)
                 contador += 1
@@ -132,31 +132,39 @@ class App(customtkinter.CTk):
         #   if self.lista_pesos.count(peso)>1 and lista_mostrar.count(peso)==0:
         #       lista_mostrar.append(peso)
         #print(lista_mostrar)
-           
+         tipo= self.combobox_tipo_de_peso.set()
+         for tipo in self.lista_pesos:
+            peso_mayor= 0
+            if tipo > peso_mayor:
+                promedio_mayor.append(tipo)
+            else:
+                promedio_menor.append(tipo)
+        print("Kilomentrasje que supera el promedio: " + str(promedio_mayor))
+        print("Kilomentrasje que NO supera el promedio" + str(promedio_menor))
+
+         #peso=self.lista_pesos
+         #onzas = self.combobox_tipo_de_peso.get()
+         #pesado = self.combobox_tipode_peso.get()
+         #for i in self.combobox_tipo_de_peso("Granos"):
+         # eje 1
+         #   if i > 0:
+         #       if pesado == None:
+         #         pesado = i 
+         #       elif pesado < i:
+         #        pesado = i
+         #       
+         #       pesado=float(pesado)
+         #       pesado += i
+         #eje 2   
+         #   elif self.combobox_tipo_de_peso("Onzas"):
+         #        onzas += peso
+         #        onzas += 1
+         #   promedio = peso/onzas
 
 
-       peso=self.lista_pesos
-       pesado = self.combobox_tipo_de_peso.get()
-       onzas = self.combobox_tipo_de_peso.get()
-       
-       for i in self.combobox_tipo_de_peso("Gramos"):
-            if i > 0:
-                if pesado == None:
-                    pesado = i
-                elif pesado < i:
-                    pesado = i
                 
-                pesado=float(pesado)
-                pesado += i
-            
-            elif self.combobox_tipo_de_peso("Onzas"):
-                onzas += peso
-                onzas += 1
-            promedio = peso/onzas
-
-                
-            print(promedio)
-            print(pesado)   
+        #    print(promedio)
+        #    print(pesado)   
     
 if __name__ == "__main__":
     app = App()
