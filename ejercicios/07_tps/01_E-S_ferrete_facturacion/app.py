@@ -133,14 +133,16 @@ class App(customtkinter.CTk):
         #       lista_mostrar.append(peso)
         #print(lista_mostrar)
          tipo= self.combobox_tipo_de_peso.set()
+         promedio_mayor=0
+         promedio_menor=0
          for tipo in self.lista_pesos:
             peso_mayor= 0
             if tipo > peso_mayor:
                 promedio_mayor.append(tipo)
             else:
                 promedio_menor.append(tipo)
-        print("Kilomentrasje que supera el promedio: " + str(promedio_mayor))
-        print("Kilomentrasje que NO supera el promedio" + str(promedio_menor))
+         print("Kilomentrasje que supera el promedio: " + str(promedio_mayor))
+         print("Kilomentrasje que NO supera el promedio" + str(promedio_menor))
 
          #peso=self.lista_pesos
          #onzas = self.combobox_tipo_de_peso.get()
