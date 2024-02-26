@@ -5,6 +5,7 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
+<<<<<<< HEAD
 <<<<<<< HEAD:ejercicios/07_tps/04_IF_ferrete_iluminacion/app.py
 nombre: Dario Ezequiel
 apellido: Mateo
@@ -17,6 +18,18 @@ TP: Iluminación
 ---
 Enunciado:
 >>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/03_match/TP_Match/04_Match_Py_iluminacion.py
+=======
+nombre:
+apellido:
+---
+<<<<<<<< HEAD:00-Unidades/02_if/TP_If/04_IF_Py_iluminacion.py
+TP: IF_Iluminacion
+========
+TP: Iluminación
+>>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/03_match/TP_Match/04_Match_Py_iluminacion.py
+---
+Enunciado:
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 Todas las lámparas están  al mismo precio de $800 pesos final.
 		A.	Si compra 6 o más  lamparitas bajo consumo tiene un descuento del 50%. 
 		B.	Si compra 5  lamparitas bajo consumo marca "ArgentinaLuz" se hace un descuento del 40 % y si es de otra marca el descuento es del 30%.
@@ -49,6 +62,7 @@ class App(customtkinter.CTk):
 
 
     def btn_calcular_on_click(self):
+<<<<<<< HEAD
         lamparitas = self.combobox_marca.get()
         cantidad = self.combobox_cantidad.get()
         cantidad =int(cantidad)
@@ -78,6 +92,9 @@ class App(customtkinter.CTk):
 
 
 
+=======
+        pass
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
         
     
 if __name__ == "__main__":

@@ -37,6 +37,7 @@ class App(customtkinter.CTk):
 
 
     def btn_comenzar_ingreso_on_click(self):
+<<<<<<< HEAD
         acumulador_negativos= 0 
         acumulador_positivos= 0 
         cantidad_negativos= 0 
@@ -67,6 +68,9 @@ class App(customtkinter.CTk):
         alert("Suma de negativos", str(acumulador_negativos))
         alert("Cantidad de negativos", str(cantidad_negativos))
         alert("Cantidad de ceros", str(ceros))
+=======
+        pass
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 
     
 if __name__ == "__main__":

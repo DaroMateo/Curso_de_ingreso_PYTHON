@@ -6,17 +6,23 @@ import customtkinter
 
 
 '''
+<<<<<<< HEAD
 <<<<<<< HEAD:ejercicios/03_instruccion_match/ejercicio_08/Match_app_08.py
 nombre: Dario Ezequiel
 apellido: Mateo
 ...
 =======
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 nombre:
 apellido:
 ---
 Ejercicio: Match_08
 ---
+<<<<<<< HEAD
 >>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/03_match/Ejercicios_Match/Match_app_08.py
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 Enunciado:
 Obtener el destino seleccionado en el combobox_destino, luego al presionar el botón 
 ‘Informar’ indicar mediante alert si en el destino hace frío o calor la mayoría 

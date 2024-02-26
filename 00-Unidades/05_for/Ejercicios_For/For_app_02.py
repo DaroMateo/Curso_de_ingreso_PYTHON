@@ -26,8 +26,12 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
+<<<<<<< HEAD
         for i in range(5,1,-1):
             alert("DESNDENTE" , i)  
+=======
+        pass
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
        
             
 

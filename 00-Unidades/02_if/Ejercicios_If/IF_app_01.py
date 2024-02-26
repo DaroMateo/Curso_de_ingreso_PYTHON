@@ -36,6 +36,7 @@ class App(customtkinter.CTk):
         edad = self.txt_edad.get()
         edad = int(edad)
 
+<<<<<<< HEAD
 <<<<<<< HEAD:ejercicios/02_instruccion_if/ejercicio_01/IF_01.py
         if edad == 18:
           alert ("Bienvenido" , "Usted tiene mayor de 18")
@@ -44,6 +45,9 @@ class App(customtkinter.CTk):
 =======
          
 >>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/02_if/Ejercicios_If/IF_app_01.py
+=======
+         
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")

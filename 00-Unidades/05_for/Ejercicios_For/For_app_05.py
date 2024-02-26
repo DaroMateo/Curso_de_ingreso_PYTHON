@@ -33,7 +33,10 @@ class App(customtkinter.CTk):
 =======
         pass
             
+<<<<<<< HEAD
 >>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/05_for/Ejercicios_For/For_app_05.py
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
         
     
 if __name__ == "__main__":

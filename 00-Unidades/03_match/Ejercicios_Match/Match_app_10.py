@@ -6,17 +6,23 @@ import customtkinter
 
 
 '''
+<<<<<<< HEAD
 <<<<<<< HEAD:ejercicios/03_instruccion_match/ejercicio_10/Match_app_10.py
 nombre: Dario Ezequiel
 apellido: Mateo
 ...
 =======
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 nombre:
 apellido:
 ---
 Ejercicio: Match_10
 ---
+<<<<<<< HEAD
 >>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/03_match/Ejercicios_Match/Match_app_10.py
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 Una agencia de viajes nos pide informar si hacemos viajes a lugares según la estación del año. 
 En caso de hacerlo mostrar un alert con el mensaje “Se viaja”, 
 caso contrario mostrar “No se viaja”. 

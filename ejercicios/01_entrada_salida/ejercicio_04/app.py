@@ -11,7 +11,12 @@ apellido: Mateo
 Ejercicio: entrada_salida_04
 ---
 Enunciado:
+<<<<<<<< HEAD:ejercicios/01_entrada_salida/ejercicio_04/app.py
 Al presionar el botón  'Mostrar', se deberá obtener un nombre utilizando el Dialog Prompt y luego mostrarlo en la caja de texto txt_nombre (.delete / .insert )
+========
+Al presionar el botón  'Mostrar', se deberá obtener el contenido de la caja de texto para luego 
+mostrarlo utilizando el Dialog Alert
+>>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/01_entrada_salida/Ejercicios_entrada_salida/ES_app_03.py
 '''
 
 class App(customtkinter.CTk):

@@ -6,17 +6,23 @@ import customtkinter
 
 
 '''
+<<<<<<< HEAD
 <<<<<<< HEAD:ejercicios/04_intruccion_while/ejercicio_05/While_app_05.py
 nombre: Dario Ezequiel
 apellido: Mateo
 ...
 =======
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 nombre:
 apellido:
 ---
 Ejercicio: while_05
 ---
+<<<<<<< HEAD
 >>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/04_while/Ejercicios_While/While_app_05.py
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 Enunciado:
 Al presionar el botón ‘Validar letra’, mediante prompt solicitar al usuario que ingrese una letra. 
 Se deberá validar que la letra sea ‘U’, ‘T’ o ‘N’ (en mayusculas). 

@@ -46,6 +46,7 @@ class App(customtkinter.CTk):
         self.btn_validar.grid(row=4, pady=20, columnspan=2, sticky="nsew")
 
     def btn_validar_on_click(self):
+<<<<<<< HEAD
         nombre = "" 
         edad = 0  
         genero = "" 
@@ -137,6 +138,9 @@ class App(customtkinter.CTk):
         print("Porcentaje de postulantes de cada género FS: " + str(porcentaje_fs))
         print("Porcentaje de postulantes de cada género MS: " + str(porcentaje_ms))
 
+=======
+        pass
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 
 
 if __name__ == "__main__":

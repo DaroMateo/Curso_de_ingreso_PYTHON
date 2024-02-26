@@ -6,17 +6,23 @@ import customtkinter
 
 
 '''
+<<<<<<< HEAD
 <<<<<<< HEAD:ejercicios/04_intruccion_while/ejercicio_04/While_app_04.py
 nombre: Dario Ezequiel
 apellido: Mateo
 ...
 =======
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 nombre:
 apellido:
 ---
 Ejercicio: while_04
 ---
+<<<<<<< HEAD
 >>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/04_while/Ejercicios_While/While_app_04.py
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 Enunciado:
 Al presionar el botón ‘Validar número’, mediante prompt solicitar al usuario que ingrese un número. 
 Se deberá validar que se encuentre entre 0 y 9 inclusive. En caso no coincidir con el rango, 

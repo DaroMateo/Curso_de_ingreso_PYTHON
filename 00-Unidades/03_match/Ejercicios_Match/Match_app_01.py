@@ -5,18 +5,24 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
+<<<<<<< HEAD
 <<<<<<< HEAD:ejercicios/03_instruccion_match/ejercicio_01/Match_app_01.py
 nombre: Dario Ezequiel
 apellido: Mateo
 ...
 =======
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 
 nombre:
 apellido:
 ---
 Ejercicio: Match_01
 ---
+<<<<<<< HEAD
 >>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/03_match/Ejercicios_Match/Match_app_01.py
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 Enunciado:
 Obtener el valor del mes seleccionado en el combobox_mes y  
 al presionar el botón ‘Informar’ mostrar mediante alert los siguientes mensajes 

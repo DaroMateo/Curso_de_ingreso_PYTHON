@@ -27,12 +27,20 @@ class App(customtkinter.CTk):
         self.lista_datos = [2,3,5,7,11,13]
         
     def btn_calcular_on_click(self):
+<<<<<<< HEAD
         suma = self.lista_datos[0]
         for contador in (self.lista_datos):
             suma += contador
         alert("", suma)
+=======
+        pass
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
     
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
+<<<<<<< HEAD
     app.mainloop()
+=======
+    app.mainloop()
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86

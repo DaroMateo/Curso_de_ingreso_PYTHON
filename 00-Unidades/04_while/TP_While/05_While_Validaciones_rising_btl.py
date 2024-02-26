@@ -5,18 +5,24 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
+<<<<<<< HEAD
 <<<<<<< HEAD:ejercicios/07_tps/05_WHILE_VALIDACIONES_rising_btl/app.py
 nombre: Dario Ezequiel
 apellido: Mateo
 ...
 =======
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 nombre:
 apellido:
 ---
 TP: While_validaciones_rising_btl
 ---
 Enunciado:
+<<<<<<< HEAD
 >>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/04_while/TP_While/05_While_Validaciones_rising_btl.py
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 Rising BTL. Empresa dedicada a la toma de datos para realizar estadísticas y censos nos pide realizar una carga de datos validada e ingresada 
 por ventanas emergentes solamente (para evitar hacking y cargas maliciosas) y luego asignarla a cuadros de textos. 
 

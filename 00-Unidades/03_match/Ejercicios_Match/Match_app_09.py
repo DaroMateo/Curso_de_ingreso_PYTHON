@@ -6,18 +6,24 @@ import customtkinter
 
 
 '''
+<<<<<<< HEAD
 <<<<<<< HEAD:ejercicios/03_instruccion_match/ejercicio_09/Match_app_09.py
 nombre: Dario Ezequiel
 apellido: Mateo
 ...
 Enunciado:
 =======
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 nombre:
 apellido:
 ---
 Ejercicio: Match_09
 ---
+<<<<<<< HEAD
 >>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/03_match/Ejercicios_Match/Match_app_09.py
+=======
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 Una agencia de viajes cobra $15.000 por cada estadía como base. 
 Luego para calcular las tarifas total realiza el siguiente cálculo, 
 en función de la estación del año y del destino elegido:

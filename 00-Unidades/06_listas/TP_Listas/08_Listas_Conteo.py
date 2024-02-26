@@ -53,6 +53,7 @@ class App(customtkinter.CTk):
         self.lista_numeros = []
 
     def btn_comenzar_ingreso_on_click(self):
+<<<<<<< HEAD
         numero = prompt("", "NUMERO")
         continuar = True
 
@@ -115,6 +116,12 @@ class App(customtkinter.CTk):
 
 
         alert("Estadisticas", mensaje)
+=======
+        pass
+
+    def btn_mostrar_estadisticas_on_click(self):
+        pass
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86
 
 
 if __name__ == "__main__":

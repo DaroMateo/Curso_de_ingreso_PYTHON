@@ -26,6 +26,7 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
+<<<<<<< HEAD
         numero = int(prompt("", "NUMERO"))
         es_primo = True
 
@@ -45,3 +46,11 @@ if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
     app.mainloop()
+=======
+        pass
+    
+if __name__ == "__main__":
+    app = App()
+    app.geometry("300x300")
+    app.mainloop()
+>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86

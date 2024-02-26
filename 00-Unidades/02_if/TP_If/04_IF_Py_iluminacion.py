@@ -8,7 +8,11 @@ import customtkinter
 nombre:
 apellido:
 ---
+<<<<<<<< HEAD:00-Unidades/02_if/TP_If/04_IF_Py_iluminacion.py
 TP: IF_Iluminacion
+========
+TP: Iluminación
+>>>>>>>> 277afc52c540c0c72fe55761e1c978c933b67b86:00-Unidades/03_match/TP_Match/04_Match_Py_iluminacion.py
 ---
 Enunciado:
 Todas las lámparas están  al mismo precio de $800 pesos final.
